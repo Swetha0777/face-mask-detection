@@ -1,0 +1,17 @@
+{
+    "epochs_completed": 3,
+    "train_accuracy": 0.7344,
+    "val_accuracy": 1.0,
+    "train_loss": 0.5322,
+    "val_loss": 0.2999,
+    "classes": [
+        "with_mask",
+        "without_mask"
+    ],
+    "input_shape": [
+        224,
+        224,
+        3
+    ],
+    "model_architecture": "MobileNetV2 Transfer Learning"
+}
