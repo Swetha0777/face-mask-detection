@@ -3,6 +3,7 @@ Face Detection and Mask Classification Pipeline
 Combines OpenCV Haar Cascade Face Detection with Keras Mask Classification Model.
 """
 
+import os
 import cv2
 import numpy as np
 from PIL import Image
@@ -21,7 +22,7 @@ class FaceMaskDetector:
         self.model = model
         
         # Load OpenCV default frontal face Haar cascade
-        if cascade_path and cv2.os.path.exists(cascade_path):
+        if cascade_path and os.path.exists(cascade_path):
             self.face_cascade = cv2.CascadeClassifier(cascade_path)
         else:
             default_cascade = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
